@@ -1,0 +1,10 @@
+project: mayhemheroes/trust-dns
+target: message
+
+cmds:
+  - cmd: /mayhem/message
+    libfuzzer: true
+
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/message/testsuite
